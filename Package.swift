@@ -21,7 +21,8 @@ let package = Package(
             dependencies: [
                 .product(name: "OpenAIKit", package: "openai-kit"),
                 .product(name: "Vapor", package: "vapor"),
-            ]
+            ],
+            path: "Sources/OpenAI"
         )
     ]
 )
