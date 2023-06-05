@@ -16,9 +16,13 @@ let package = Package(
         .package(url: "https://github.com/dylanshine/openai-kit.git", from: "1.0.0"),
     ],
     targets: [
-        .target(name: "OpenAI", dependencies: [
-            .product(name: "OpenAIKit", package: "openai-kit"),
-            .product(name: "Vapor", package: "vapor"),
-        ])
+        .target(
+            name: "OpenAI", 
+            dependencies: [
+                .product(name: "OpenAIKit", package: "openai-kit"),
+                .product(name: "Vapor", package: "vapor"),
+            ],
+            path: "Sources/OpenAI"
+        )
     ]
 )
